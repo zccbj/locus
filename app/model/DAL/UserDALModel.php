@@ -8,7 +8,12 @@ class UserDALModel extends lib\Model{
 	public function selectByTel($telNumber){
 		$sql="select * from {$this->table_name} where telNumber=$telNumber";
 		$userArr=$this->db->fetchRow($sql);
-		return tool\ArrToObjTool::arrToObj($userArr,'User');
+		if ($userArr) {
+			return tool\ArrToObjTool::arrToObj($userArr,'User');
+		}else{
+			return null;
+		}
+		
 	}
 	//insert一个user
 	public function insertByTel($userArr){
@@ -16,6 +21,14 @@ class UserDALModel extends lib\Model{
 		$reslut=$this->autoInsert($userArr);
 		return $reslut;
 		//成功则返回1
+	}
+	public function updateUserPsw($telNumber,$password){
+		//返回影响行数
+		$sql="update {$this->table_name} set password='$password' where telNumber='$telNumber' ";
+		$userSign=$this->db->affectedRows($sql);
+		echo $userSign;
+	die();
+		return $userSign;
 	}
 
 }

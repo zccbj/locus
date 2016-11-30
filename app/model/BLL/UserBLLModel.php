@@ -40,5 +40,12 @@ class UserBLLModel{
 			return 407;
 		}
 	}
+	public function uUserPsw($userObjFromView){
+		$userDALModel=new DAL\UserDALModel();
+		$userSignFromDb=$userDALModel->updateUserPsw($userObjFromView->telNumber,$userObjFromView->password);
+		return $userSignFromDb;
+
+
+	}
  	
  }

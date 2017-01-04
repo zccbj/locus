@@ -1,7 +1,7 @@
 <?php
 return array(
-		'DB_HOST'=>'139.196.228.34',
+		'DB_HOST'=>'115.28.73.231',
 		'DB_NAME'=>'Locus',
-		'DB_USER'=>'board_admin',
-		'DB_PWD'=>'banshu120...',
+		'DB_USER'=>'Locus_user',
+		'DB_PWD'=>'locus123...',
 		);

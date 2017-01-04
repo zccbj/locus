@@ -1,0 +1,2 @@
+2017-01-04 11-01-06"select * from friendInfo where userId=|You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"
+2017-01-04 11-02-43"select * from friendInfo where userId=|You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"

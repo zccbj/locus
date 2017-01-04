@@ -1,0 +1,3 @@
+2017-01-04 10-13-51"select * from where userId=3 and masterId=2|You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where userId=3 and masterId=2' at line 1"
+2017-01-04 10-17-42"insert into `verification` (`verificationId`, `telNumber`, `verificationNumber`, `createTime`) values (NULL, NULL, '713812', '2017-01-04 10:17:38')|Column 'telNumber' cannot be null"
+2017-01-04 10-25-31"insert into `verification` (`verificationId`, `telNumber`, `verificationNumber`, `createTime`) values (NULL, NULL, '223563', '2017-01-04 10:24:34')|Column 'telNumber' cannot be null"

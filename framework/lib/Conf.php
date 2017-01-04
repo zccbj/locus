@@ -19,12 +19,12 @@ class Conf{
 					self::$conf[$file]=$conf;
 					return $conf[$name];
 				}else{
-					throw new Exception("找不到配置".$name);
+					throw new \Exception("找不到配置".$name);
 				
 				}
 
 			}else{
-				throw new Exception("找不到配置文件".$file);
+				throw new \Exception("找不到配置文件".$file);
 			
 			}
 		}
@@ -49,7 +49,7 @@ class Conf{
 				return $conf;
 				
 			}else{
-				throw new Exception("找不到配置文件".$file);
+				throw new \Exception("找不到配置文件".$file);
 			
 			}
 		}

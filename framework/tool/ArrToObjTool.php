@@ -34,6 +34,25 @@ class ArrToObjTool{
 			return null;
 		}		
 	}
+	//二维数组转二维数组
+	public static function arr2ToArr2($array=null) {
+		if (count($array)!=count($array,1)) {
+			//说明为二维数组
+			$arr2 =array();
+			foreach ($array as $k => $v) {
+				
+				foreach ($v as $key => $value) {
+					if (!is_numeric($key)) {
+		    			$arr[$key]=$value;
+		    		}
+				}	
+				$arr2[]=$arr;	
+			}
+			return $arr2;
+		}else{
+			return null;
+		}		
+	}
 	//对象数组转换为二维数组
 	public static function objArrToArr($obj){
 		foreach ($obj as $key => $value) {

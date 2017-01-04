@@ -21,6 +21,16 @@ class Factory{
 		}
 		return $log;
 	}
+	static function getLib($key){
+		//注册器模式
+		@$lib = Register::get($key);
+		if(!$lib){
+			$class='\framework\lib\\'.$key;
+			$lib=new $class;
+			Register::set($key,$lib);
+		}
+		return $lib;
+	}
 	static function getObj($key){
 		//注册器模式
 		@$obj = Register::get($key);
